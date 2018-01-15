@@ -9,4 +9,12 @@
   &__3{
     background: $mainBlue;
   }
+  &__profile-img{
+    border-radius: 2em;
+  }
+  &__profile-quote{
+    font-weight: 100;
+    font-style: italic;
+    padding: 1em;
+  }
 }

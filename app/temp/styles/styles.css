@@ -499,17 +499,39 @@ canvas{
     }
 
 .column__third{
-      width: 33%;
+      width: 33.33%;
       float: left;
       padding: 1em;
       text-align: center;
     }
+
+.back-button{
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  background: #292929;
+  color: #fff;
+  padding: .4em;
+  border-radius: 0 0em .4em 0;
+  font-size: .8em;
+  width: 210px;
+}
+
+.back-button a{
+    color: #fff;
+    text-decoration: none;
+  }
 
 .header{
   min-height: 450px;
   text-align: center;
   background: transparent;
 }
+
+.header__logo{
+    width: 10%;
+    float: right;
+  }
 
 .header__title{
   padding: 1em;
@@ -552,6 +574,7 @@ canvas{
     width: 50%;
     color: #fff;
     font-weight: 100;
+    float: left;
   }
 
 .info__content-right{
@@ -563,21 +586,105 @@ canvas{
     margin: 0;
   }
 
+.info__content-left-graphic{
+
+  }
+
+.info__graphic__wlan{
+    width: 20%;
+    margin-right: 2em;
+    margin-left: 3em;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: pulsing;
+            animation-name: pulsing;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+.info__graphic__logo{
+    width: 30%;
+    margin-right: 2em;
+  }
+
+.info__graphic{
+    margin-top: 3em;
+  }
+
+.info__graphic__book{
+    width: 40%;
+    margin-right: 1em;
+    -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: pulsing-2;
+            animation-name: pulsing-2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+/* Standard syntax */
+
+@-webkit-keyframes pulsing {
+  0%    {width: 20%;}
+  50%   {width: 22%;}
+  100%  {width: 20%;}
+}
+
+/* Standard syntax */
+
+@keyframes pulsing {
+  0%    {width: 20%;}
+  50%   {width: 22%;}
+  100%  {width: 20%;}
+}
+
+/* Standard syntax */
+
+@-webkit-keyframes pulsing-2 {
+  0%    {width: 40%;}
+  50%   {width: 42%;}
+  100%  {width: 40%;}
+}
+
+/* Standard syntax */
+
+@keyframes pulsing-2 {
+  0%    {width: 40%;}
+  50%   {width: 42%;}
+  100%  {width: 40%;}
+}
+
 .btn {
   background-color: #1b94b9;
   color: #FFF;
   text-decoration: none;
-  padding: .75rem 1.2rem;
+  padding: .3rem .6rem;
   display: inline-block;
+  border-radius: .2em;
+  -webkit-transition: all ease 300ms;
+  transition: all ease 300ms;
 }
 
-.btn--orange {
-    background-color: orange;
+.btn--green {
+    background: #65B330;
   }
 
 .btn--large {
     font-size: 1.25rem;
     padding: 1.1rem 1.9rem;
+  }
+
+.btn a{
+    color: #fff;
+    text-decoration: none;
+  }
+
+.btn :hover{
+    -webkit-transition: all ease 300ms;
+    transition: all ease 300ms;
+    color: #292929;
   }
 
 .tasks{
@@ -594,4 +701,27 @@ canvas{
 
 .tasks__3{
     background: #1b94b9;
+  }
+
+.tasks__profile-img{
+    border-radius: 2em;
+  }
+
+.tasks__profile-quote{
+    font-weight: 100;
+    font-style: italic;
+    padding: 1em;
+  }
+
+.history{
+  background: #fff;
+  text-align: left;
+}
+
+.history__title{
+
+  }
+
+.history p{
+    text-align: left;
   }

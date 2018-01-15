@@ -2,15 +2,23 @@
   background-color: $mainBlue;
   color: #FFF;
   text-decoration: none;
-  padding: .75rem 1.2rem;
+  padding: .3rem .6rem;
   display: inline-block;
-
-  &--orange {
-    background-color: orange;
+  border-radius: .2em;
+  transition: all ease 300ms;
+  &--green {
+    background: $mainGreen;
   }
-
   &--large {
     font-size: 1.25rem;
     padding: 1.1rem 1.9rem;
+  }
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  :hover{
+    transition: all ease 300ms;
+    color: $mainGrey;
   }
 }

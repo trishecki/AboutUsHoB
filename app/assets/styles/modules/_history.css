@@ -1,0 +1,10 @@
+.history{
+  background: #fff;
+  text-align: left;
+  &__title{
+
+  }
+  p{
+    text-align: left;
+  }
+}

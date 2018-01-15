@@ -1,7 +1,28 @@
+.back-button{
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  background: $mainGrey;
+  color: #fff;
+  padding: .4em;
+  border-radius: 0 0em .4em 0;
+  font-size: .8em;
+  width: 210px;
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+
 .header{
   min-height: 450px;
   text-align: center;
   background: transparent;
+  &__logo{
+    width: 10%;
+    float: right;
+  }
 }
 .header__title{
   padding: 1em;
