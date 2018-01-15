@@ -1,0 +1,23 @@
+
+.column{
+  width: 100%;
+  position: relative;
+  display: flex;
+    &__split{
+      padding: 1em;
+    }
+    &__left{
+      float: left;
+      width: 50%;
+    }
+    &__right{
+      float: right;
+      width: 50%;
+    }
+    &__third{
+      width: 33%;
+      float: left;
+      padding: 1em;
+      text-align: center;
+    }
+}

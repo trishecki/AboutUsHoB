@@ -1,0 +1,25 @@
+.info{
+  &__tile__left{
+    background: $mainBlue;
+  }
+  &__tile__right{
+    background: $mainGrey;
+    text-align: right;
+}
+  &__title h2{
+    color: #fff;
+    font-weight: 100;
+  }
+  &__content{
+    width: 50%;
+    color: #fff;
+    font-weight: 100;
+  }
+  &__content-right{
+    float: right;
+    text-align: right;
+  }
+  &__content-right p{
+    margin: 0;
+  }
+}

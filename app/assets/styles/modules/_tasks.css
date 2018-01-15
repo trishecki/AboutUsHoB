@@ -1,0 +1,12 @@
+.tasks{
+  color: #fff;
+  &__1{
+    background: $mainGrey;
+  }
+  &__2{
+    background: $mainGreen;
+  }
+  &__3{
+    background: $mainBlue;
+  }
+}
